@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="snake_2D">
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_1">
+    <visual>
+      <origin xyz="0.05 0 0"/>
+      <geometry>
+        <box size="0.1 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_2">
+    <visual>
+      <origin xyz="0.05 0 0"/>
+      <geometry>
+        <box size="0.1 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="end_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" lower="-3.14159" upper="3.14159" velocity="1"/>
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.1 0 0"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" lower="-3.14159" upper="3.14159" velocity="1"/>
+  </joint>
+  <joint name="joint_end" type="fixed">
+    <origin rpy="0 0 0" xyz="0.1 0 0"/>
+    <parent link="link_2"/>
+    <child link="end_link"/>
+  </joint>
+</robot>
