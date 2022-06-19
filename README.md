@@ -2,7 +2,7 @@
 
 This repository is the official implementation of Neural Inverse Kinematics (ICML 2022) by Raphael Bensadoun, Shir Gur, Nitsan Blau, Lior Wolf.
 
-** [arXiv](https://arxiv.org/pdf/2205.10837.pdf) | [Code](https://github.com/RaphaelBensTAU/NeuralInverseKinematics)**
+**[arXiv](https://arxiv.org/pdf/2205.10837.pdf) | [Code](https://github.com/RaphaelBensTAU/NeuralInverseKinematics)**
 
 ## Requirements
 
@@ -13,7 +13,6 @@ conda env create -f environment.yml
 ```
 Models, plots and metrics are stored in NeuralInverseKinematics/runs.
 
-## Examples from paper -
 
 ## Training on 2D 'snake' arms
 ## 2 joints
