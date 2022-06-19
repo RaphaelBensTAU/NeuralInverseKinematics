@@ -117,7 +117,6 @@ def train(cfg):
         plt.savefig(f'{cfg.exp_dir}/test_plot.png')
         plt.clf()
 
-
         torch.save(hypernet.state_dict(), f'{cfg.exp_dir}/last_model.pt')
         torch.save(optimizer.state_dict(), f'{cfg.exp_dir}/last_optimizer.pt')
 
@@ -138,9 +137,9 @@ def create_exp_dir(cfg):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--chain-path', type=str, default="/home/raphael/home/raphael/PycharmProjects/hyperikArxiv/assets/digit/urdf/digit_r_arm.urdf", help='urdf chain path')
-    parser.add_argument('--train-data-path', type=str, default="/home/raphael/home/raphael/PycharmProjects/hyperikArxiv/data/digit/train_20000.hdf5", help='urdf chain path')
-    parser.add_argument('--test-data-path', type=str, default='/home/raphael/home/raphael/PycharmProjects/hyperikArxiv/data/digit/val_1000.hdf5', help='urdf chain path')
+    parser.add_argument('--chain-path', type=str, default="assets/digit/urdf/digit_r_arm.urdf", help='urdf chain path')
+    parser.add_argument('--train-data-path', type=str, default="data/digit/train_20000.hdf5", help='urdf chain path')
+    parser.add_argument('--test-data-path', type=str, default='data/digit/val_1000.hdf5', help='urdf chain path')
     parser.add_argument('--num-joints', type=int, default=4, help='number of joints of the kinematic chain')
 
 
