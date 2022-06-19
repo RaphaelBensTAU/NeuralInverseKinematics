@@ -1,6 +1,6 @@
 # Neural Inverse Kinematics
 
-This repository is the official implementation of Neural Inverse Kinematics (ICML 2022) by Raphael Bensadoun, Shir Gur, Nitsan Blau, Lior Wolf.
+This repository is the official implementation of Neural Inverse Kinematics (ICML 2022) by Raphael Bensadoun et al.
 
 **[arXiv](https://arxiv.org/pdf/2205.10837.pdf) | [Code](https://github.com/RaphaelBensTAU/NeuralInverseKinematics)**
 
