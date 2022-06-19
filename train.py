@@ -70,7 +70,7 @@ def train(cfg):
             optimizer.step()
 
         train_losses.append(train_loss / train_counter)
-        print(f"Train loss {train_losses[-1]}")
+        print(f"Train loss (Likelihood) {train_losses[-1]}")
 
         train_loss, train_counter = 0, 0
 
@@ -93,7 +93,7 @@ def train(cfg):
                 test_counter += 1
 
         test_losses.append(test_loss / test_counter)
-        print(f"Test loss {test_losses[-1]}")
+        print(f"Test loss (RMSE){test_losses[-1]}")
 
         if test_losses[-1] < best_test_loss:
             epochs_without_improvements = 0
