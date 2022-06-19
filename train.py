@@ -122,6 +122,8 @@ def train(cfg):
 
 
 def create_exp_dir(cfg):
+    if not os.path.exists(cfg.exp_dir):
+        os.mkdir(cfg.exp_dir)
     existing_dirs = os.listdir(cfg.exp_dir)
     if existing_dirs:
         sorted_dirs = sorted(existing_dirs, key=lambda x : int(x.split('_')[1]))
