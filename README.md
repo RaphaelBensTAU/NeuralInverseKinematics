@@ -10,6 +10,7 @@ To install requirements:
 
 ```setup
 conda env create -f environment.yml
+conda activate torch1.10
 ```
 Models, plots and metrics are stored in NeuralInverseKinematics/runs.
 
