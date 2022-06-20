@@ -13,6 +13,12 @@ conda env create -f environment.yml
 ```
 Models, plots and metrics are stored in NeuralInverseKinematics/runs.
 
+## Training on custom kinematic chain
+Please use utils/data_generator.py script to generate data and run the next command -
+
+```
+python train.py --chain-path PATH_TO_KINEMATIC_CHAIN.urdf --train-data-path PATH_TO_TRAINING_DATA.hdf5 --test-data-path PATH_TO_VALIDATION_DATA.hdf5 --num-joints NUM_OF_JOINTS 
+```
 
 ## Training on 2D 'snake' arms
 ## 2 joints
