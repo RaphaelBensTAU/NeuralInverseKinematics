@@ -1,4 +1,4 @@
-name: torch1.10
+name: neural_inverse_kinematics
 channels:
   - pytorch
   - defaults
@@ -209,4 +209,4 @@ dependencies:
     - tenacity==8.0.1
     - tokenizers==0.10.3
     - transformers==4.13.0
-prefix: /opt/anaconda3/envs/torch1.10
+prefix: /opt/anaconda3/envs/neural_inverse_kinematics
